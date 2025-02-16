@@ -11,7 +11,6 @@ interface PlantInfo {
   treatment: string;
 }
 
-// Plant database
 // Expanded Plant database
 const plantDatabase: Record<string, PlantInfo> = {
   mustard: {

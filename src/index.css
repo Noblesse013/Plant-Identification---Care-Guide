@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  gap: 16px; /* Space between buttons */
+  margin: 20px 0; /* Margin above and below the buttons */
+}
+
+.upload-button,
+.scan-button {
+  padding: 12px 24px; /* Padding for buttons */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.upload-button {
+  background-color: var(--primary-color); /* Use a color from your design system */
+  color: white; /* Text color */
+}
+
+.scan-button {
+  background-color: var(--secondary-color); /* Use a different color */
+  color: white; /* Text color */
+}
+
+.upload-button:hover,
+.scan-button:hover {
+  background-color: darken(var(--primary-color), 10%); /* Darken on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
